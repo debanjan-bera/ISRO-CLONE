@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+	height: 100vh;
+	width: 100vw;
+	position:relative;
+	background-image: url('images/panoramic-view-sunset-night_23-2148933764.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+form img{
+    height: 120px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+	gap: 15px;
+    font-size:1.5rem;
+	color:white;
+	background-color:rgba(255,255,255,0.05);
+	backdrop-filter:blur(10px);
+	box-shadow: 0 0 40px rgba(8,7,16,0.6);
+	border-radius:14px;
+	position: absolute;
+	top:75px;
+	right:160px;
+	z-index: 3;
+	padding: 24px;
+}
+input{
+	border:none;
+	border-bottom:4px solid grey;
+	display:inline-block;
+	background-color:rgba(255,255,255,0.09);
+	margin-top:40px;
+	padding:10px;
+	border-radius:7px;
+	margin:0px;
+	
+	color:white;
+	transition: all ease 0.2s;
+	font-size:1.1rem;
+}
+label p{
+	padding-bottom: 1vh;
+}
+.earth{
+	width: 400px;
+    height: 400px;
+    background-image: url(images/world.jpg);
+    border-radius: 50%;
+    position: absolute;
+    /* top: 10%; */
+    /* left: 11%; */
+    animation: rotate 25s infinite linear;
+    background-size: 800px 800px;
+    box-shadow: 0px 0px 1px #fff7f7, inset 30px 0px 50px black;
+}
+@keyframes rotate{
+	0%{
+		background-position-x:0px;
+	}
+	100%{
+		background-position-x:1000px;
+	}
+	}
+a {
+	background-color: white;
+	color: #0046FF;
+	border:none;
+  border-radius:25px;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display:block;
+  margin-top:30px;
+  font-weight:600;
+  
+  transition: all ease 0.50s;
+  }
+  a:hover{
+	background: linear-gradient(100deg, #9a00e2, #0043ff);
+	color: white;
+  }
+  @media screen and (max-width:760px) {
+	header{
+		display: flex;
+		flex-direction: column;
+    	align-items: center;
+    	justify-content: center;
+	}
+	form{
+		position: static;
+	}
+
+  }
+  @media screen and (min-width:375px){
+		.earth{
+			height: 350px;
+			width: 350px;
+			z-index: 2;
+		}
+		form{
+			backdrop-filter: blur(14px);
+		}
+  }
+  @media screen and (min-width:430px){
+	.earth{
+		height: 400px;
+		width: 400px;
+		z-index: 2;
+	}
+}
+@media screen and (min-width:760px){
+	.earth{
+		height: 500px;
+		width: 500px;
+		top: 19%; 
+		left: 11%; 
+	}
+	form{
+		backdrop-filter: blur(10px);
+	}
+}
+@media screen and (min-width:1000px){
+	.earth{
+		height: 550px;
+		width: 550px;
+		top: 10%; 
+		left: 11%;
+		background-size: 900px 800px; 
+	}
+}
+@media screen and (min-width:1200px){
+	.earth{
+		height: 600px;
+		width: 600px;
+		top: 12%; 
+		left: 11%; 
+		background-size: 1000px 800px;
+	}
+}
