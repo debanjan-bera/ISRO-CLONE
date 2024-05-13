@@ -24,7 +24,7 @@ nav{
     font-size: 23px;
     z-index: 12;
     padding-bottom: 2px;
-    background-color: #000032;
+    background-color: #040405;
     border-radius:0px 0px 32px 32px;
 }
 nav img{
@@ -35,14 +35,49 @@ nav img{
 nav ul li{
     list-style: none;
     display: inline-block;
-    padding-right:40px;
+    margin-right:40px;
     font-weight: 550;
+    position: relative;
+    overflow: hidden;
+}
+nav ul li::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.9s;
+}
+nav ul li:hover::after{
+    transform: scaleX(1);
+}
+nav .manu{
+    margin: 0;
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+nav .manu a{
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
+    visibility: hidden;
+}
+nav .manu i{
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
+    visibility: hidden;
 }
 nav ul a{
     margin-right: 40px;
     padding: 10px 20px;
     border:3px solid #ffffff;
-    color: rgb(255, 152, 18);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     background-color:rgba(255, 255, 255, 0.099);
     font-weight: 600;
@@ -83,7 +118,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(179deg, #00000059, #000000cc 120%);
+    background: linear-gradient(179deg, #ffffff00, #000000cc 120%);
     box-shadow: inset 0px -29px 30px black;
 }
 .headertext{
@@ -132,6 +167,17 @@ header{
 .wrap img:nth-child(4){
     width: 120vw;
 }
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: move  0.5s linear forwards;
+}
+@keyframes move{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 @keyframes anime {
     to{
         background-position: 200%;
@@ -163,7 +209,6 @@ header{
         transform: translateX(-300%);
     }
 }
-
 
 main{
     overflow: hidden;
@@ -249,7 +294,7 @@ main{
   }
   .aboutdes p{
     font-size:1.8rem;
-    font-weight: 200;
+    font-weight: 400;
     z-index: 4;
   }
   .abtcir1{
@@ -634,6 +679,9 @@ main{
     transform: scaleX(1);
     height: 2px;
 }
+.sel::selection{
+    background-color: transparent;
+}
 .nh1 a{
     padding: 10px;
     border-radius: 5px;
@@ -739,6 +787,72 @@ main{
     font-size: 26px;
     color: rgba(248, 248, 248, 0.462);
 }
+footer{
+    color:white;
+    height:380px;
+    width:100%;
+    background-color: #14151a;
+    box-shadow: 0px 2px 40px #ffffff63;
+    margin-top: 30px;
+    display:flex;
+    font-weight:600;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    border-radius:57px 20px 0px 0px;
+    justify-content: space-evenly;
+    gap:12px;
+    }
+    footer h3{
+        margin:-15px 0px 20px;
+        color:white;
+    
+    }
+    .add{
+    margin:50px 0px;
+    }
+    .add1{
+    background-color:rgb(241 241 241 / 19%);
+    padding:10px;
+    border-radius:4px;
+    border-bottom:4px solid white;
+    }
+    .f1 ul li{
+    padding:10px 0px;
+    cursor:pointer;
+    list-style:none;
+    }
+    .f1{
+    display:flex;
+    }
+    .f2{
+    padding:0px;
+    margin:0px;
+    width:240px;
+    
+    overflow:hidden;
+    background-size:cover;
+    
+    }
+    footer img{
+        height: 300px;
+        width: 300px;
+    }
+    
+    .flast{
+    height:70px;
+    width:100%;
+    color:white;
+    background-color:rgb(15 15 15);
+    
+    padding:16px 0px 7px;
+    }
+    .flast span{
+    
+    font-weight:600;
+    }
+    
 @media screen and (max-width:1024px){
     
     .about{
@@ -776,15 +890,45 @@ main{
 @media screen and (max-width:700px){
     nav ul li{
         visibility: hidden;
+        font-size: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    nav .manu{
+        margin-top: 18px;
+
+    }
+    nav .manu i{
+        visibility: visible;
+        font-size: 18px;
+        padding-right:12px ;
     }
     nav ul a{
         visibility: hidden;
+        font-size: 0px;
+        margin: 0px;
+        padding: 0px;
     }
     nav img{
         height: 67px;
     }
     .nti{
         font-size: 1.6rem;
+    }
+    footer{
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 57px 57px 0px 0px;
+    }
+    footer .f1{
+        padding-left: 32px;
+    }
+    footer h3 {
+        margin: 30px 16px 20px;
+    }
+    .add1{
+        margin: 0 14px;
     }
 }
 @media screen and (max-width:515px){
@@ -808,10 +952,10 @@ main{
         
     }
     .headertext h3{
-        font-size: 5.7vw;
+        font-size: 5.8vw;
     }
     .headertext h4{
-        font-size: 4vw;
+        font-size: 4.9vw;
     }
     .cover{
         object-fit: cover;
@@ -918,6 +1062,9 @@ main{
     }
     .newsline:hover{
         background: linear-gradient(to bottom, rgba(84, 84, 84, 0.41), rgba(83, 83, 83, 0.33), rgba(0, 0, 0, 0));
+    }
+    footer img{
+        width: 100%;
     }
 }
 @media screen and (max-width:375px){

@@ -1,0 +1,793 @@
+<htmL>
+<head>
+	<title>Sun Mission</title>
+<style>
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family:arial;
+	
+	
+}
+	body{
+	color:white;	
+	background-color: #0b0329;
+}
+	
+.nav{				
+	width:100%;
+	color:black;
+	
+}
+	nav{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		display:flex;
+			align-items:center;
+			justify-content:space-between;
+			padding:5px 2%;
+			font-size:25px;
+		z-index:15;
+		}
+
+		nav img{
+			margin-left:-12px;
+    			margin-top: -12px;
+    			margin-bottom: -20px;
+			margin-right:0px;
+			
+
+			}
+		nav ul{
+			border:0.1px solid #00000061;
+			border-radius:12px;
+			background-color:#deafaf17;
+			backdrop-filter:blur(10px);
+			padding-bottom:2x;
+
+
+}
+			
+		nav ul li{
+				list-style:none;
+				display:inline-block;
+				margin:8px 17px;
+				font-weight:500;
+				cursor:pointer;
+				color:white;
+				transition: all ease 0.2s;
+				
+			}
+nav ul li a{
+			text-decoration: none;
+			
+			color:white;
+		}
+		nav ul li:hover{
+			border-bottom:3px solid white;
+			color:white;
+			scale:0.9;
+			
+}
+.first{
+display:flex;
+}
+
+.first p{
+width:400px;
+border-left:2px solid white;
+color:white;
+font-weight:700;
+padding-left:12px;
+padding-top:6px;
+
+
+}
+
+main{
+			height: 100vh;
+   			width: auto;
+    			overflow:hidden;
+			margin-bottom:0px;
+			
+			/*background-image:url('solar-system-planet-collage_23-2150188998.jpg');
+			background-repeat:no-repeat;
+			bakround-attachment:fixed;
+			background-size:100vw 110vh;*/
+			background-color: #0b0329;
+			
+
+}
+
+	.sat{
+	height: 100vh;
+    width: auto;
+    position: relative;
+    margin-bottom: 0px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+			
+			
+			
+}
+.orbit{
+position: absolute;
+    top: -241px;
+    right: -447px;
+    height: 1191px;
+    width: 1200px;
+    border-radius: 50%;
+    animation: rotate 30s infinite linear;
+}
+
+.orbit img{
+position: absolute;
+    top: 17%;
+    right: 83%;
+    height: 200px;
+    width: 200px;
+    z-index: 10;
+transform:rotate(139deg);	
+animation: orbit 15s infinite linear;
+
+
+
+}
+.sun img{
+	position: absolute;
+    top: -233px;
+    right: -300px;
+    height: 870px;
+    width: 870px;
+    z-index: 0;
+    filter: drop-shadow(0px -6px 100px orange) drop-shadow(0px -6px 2006px orange);
+    animation: rotate 31s infinite linear;
+}
+
+
+@keyframes rotate{
+
+
+
+100%{
+	
+transform:rotate(-360deg);
+}
+}
+.sat h1{
+	
+	font-size:80px;
+	 z-index: 10;
+	font-weight:500;
+color:aliceblue;
+	
+}
+.sat img{
+	 z-index: 10;
+
+
+}
+.sat p{
+	
+	font-size:40px;
+	 z-index: 10;
+	font-weight:200;
+	
+}
+.earth{
+    width: 480px;
+    height: 480px;
+    background-image: url(images/world.jpg);
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: -11%;
+    animation: erotate 18s infinite linear;
+    background-size: 1000px 800px;
+    transform: rotate(345deg);
+    box-shadow: 0px 0px 1px #fff7f7, inset 4px -3px 28px 0px #0055a4a3;
+}
+
+
+@keyframes erotate{
+0%{
+	background-position-x:0px;
+}
+100%{
+	background-position-x:1000px;
+}
+}
+.mission{
+height: 512px;
+    width: 96vw;
+    margin: 32px 18px 23px;
+    padding: 35px;
+    border-radius: 23px;
+    padding-right: 0px;
+    display: flex;
+    padding-bottom: 50px;
+    background: linear-gradient(324deg, #d00000,#dc2f02,#E85d04,#F48c06,#faa307,#ffba08);
+    color: white;
+    box-shadow: 2px 2px 19px 0px #000000cc;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+	    overflow: hidden;
+
+}
+.mission .right{
+height: 116%;
+    padding-bottom: 38px;
+    border-radius: 23px;
+    position: relative;
+   
+    width: 1000px;
+  
+
+}
+
+.mission h2{
+font-size:34px;
+padding:20px 0px;
+}
+.mission h3{
+font-size:27px;
+padding-bottom:15px;
+}
+.mission ul li{
+padding:10px 0px;
+font-size:24px;
+
+}
+.mission img{
+height: 631px;
+    width: 632px;
+    position: absolute;
+    top: -67px;
+    left: 9px;
+    transform: rotate(7deg);
+    margin: 0px;
+    padding: 0px;
+    animation: rotate 31s infinite linear;
+}
+
+
+
+
+
+
+
+.over{
+height: auto;
+    width: 96vw;
+    margin: 32px 18px 23px;
+    padding: 35px;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    background: linear-gradient(153deg, #ff4066, #ffe700 90%);
+    color: white;
+    box-shadow: 0px 3px 40px 0px #0000009e;
+}
+
+
+.over h2{
+font-size:34px;
+padding:15px 0px;
+}
+.over h3{
+font-size:27px;
+padding-bottom:15px;
+}
+.over p{
+padding:10px 0px;
+font-size:24px;
+
+}
+
+footer{
+color:white;
+height:300px;
+width:100%;
+background-color:#c900008f;
+display:flex;
+font-weight:600;
+align-items: center;
+    			align-content: center;
+   			flex-wrap: nowrap;
+    			flex-direction: row;
+			border-radius: 47px 47px 0px 0px;
+	justify-content: space-evenly;
+gap:12px;
+}
+footer h3{
+	margin:-15px 0px 20px;
+}
+.add{
+margin:50px 0px;
+}
+.add1{
+background-color:rgb(241 241 241 / 19%);
+padding:10px;
+border-radius:4px;
+border-bottom:4px solid white;
+}
+.f1 ul li{
+padding:10px 0px;
+cursor:pointer;
+list-style:none;
+}
+.f1{
+display:flex;
+}
+.f2{
+padding:0px;
+margin:0px;
+width:240px;
+
+overflow:hidden;
+background-size:cover;
+
+}
+.flast{
+height:70px;
+width:100%;
+color:white;
+background-color:#4f0c00;
+
+padding:16px 0px 7px;
+}
+.flast span{
+
+font-weight:600;
+}
+.mainh img{
+transition: all ease 0.2s;
+}
+section{
+
+    display: flex;
+        flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+.over .right{
+height: 106vh;
+
+
+}
+.overview{
+height: 100%;
+    margin: 20px 10px;
+    width: 400px;
+    background-color: #b8b8b814;
+    backdrop-filter: blur(30px);
+    box-shadow: inset 1px 1px 10px #570007;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.overview img{
+height:354px;
+width:350px;
+transition: transform 0.2s ease;
+}
+.solabel{
+margin:20px 10px;
+
+height:300px;
+width:350px;
+border-radius:20px;
+overflow:hidden;
+}
+.socard{
+	width: 370px;
+    background-color: #db1a1a29;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 0px red;
+	    backdrop-filter: blur(30px);
+
+}
+
+	
+
+
+.overview img:hover{
+transform: scale(1.1);
+
+
+}
+
+.script1{
+	padding:2px;
+
+	font-size:28px;
+	margin-bottom:2px;
+	text-align:center;
+}
+.launch{
+width: 95vw;
+    display: flex;
+	margin:30px 0px;
+    padding: 20px;
+    color: white;
+    background-color: #ffffff;
+    font-size: 25;
+    font-weight: 400;
+	border: 4px solid #721717;
+    border-radius: 53px;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+align-items: center;
+    justify-content: center;
+background: linear-gradient(137deg, lightsalmon, #ffa565,#e78484);
+}
+
+
+.launch p{
+	padding:12px 25px;
+	font-size:26px;
+	font-weight:500;
+}
+
+.launch h2{
+	margin:12px 25px;
+	color:white;
+	font-size:38px;
+}
+.launch h3{
+	margin:12px 25px;
+	color:white;
+}
+
+.launch .mrocard{
+	margin:20px;
+}
+.launch img{
+transition: transform 0.2s ease;
+}
+.launch img:hover{
+transform: scale(1.1);
+}
+.mrolabel{
+margin:20px 10px;
+
+height:500px;
+width:350px;
+border-radius:20px;
+overflow:hidden;
+}
+.mrocard{
+	width: 370px;
+    background-color: #db1a1a29;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 0px red;
+    backdrop-filter: blur(30px);
+
+}
+.mro{
+height:510px;
+width:360px;
+
+}
+.status{
+width: 95vw;
+    display: flex;
+	margin:30px 0px;
+    padding: 20px;
+    color: white;
+background: linear-gradient(137deg, lightsalmon, #ffa565,#e78484);
+    font-size: 25;
+    font-weight: 400;
+	 border: 4px solid #721717;
+    border-radius: 53px;
+    flex-direction: row;
+    flex-wrap: wrap;
+align-items: center;
+    justify-content: center;
+}
+.status p{
+	padding:12px 25px;
+	font-size:26px;
+	font-weight:500;
+}
+
+.status h2{
+	margin:12px 25px;
+	color:white;
+	font-size:38px;
+}
+
+.spic{
+	height:600px;
+	margin:20px 10px;
+	width:90vw;
+	background-color: #b8b8b814;
+    	backdrop-filter: blur(30px);
+	box-shadow: inset 1px 1px 10px #570007;
+	border-radius:20px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	align-content: center;
+
+
+}
+
+.label{
+height:500px;
+width:500px;
+border-radius:20px;
+overflow:hidden;
+margin:30px 0px;
+}
+.spic img{
+height:500px;
+width:500px;
+transition: transform 0.2s ease;
+}
+.spic img:hover{
+transform: scale(1.1);
+}
+.scircle{
+	height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    filter: blur(20px);
+    animation: diec 45s linear infinite alternate;
+    z-index: -1;
+    left: 25px;
+
+
+}
+@keyframes diec{
+
+0%{
+    top: 100px;
+left: 26px;
+
+}
+50%{
+top: 100px;
+left: 84%;
+
+}
+
+100%{
+
+top: 100px;
+left: 25px;
+
+}
+}
+
+
+</style>
+</head>
+
+<body>
+	<div class="nav">
+		<nav><div class="first">
+		<img src="images/Indian_logo.wine.png" height="100px" width="160px"><p>Indian Space Resaerch Organization</p>
+</div>
+		<ul>	
+			<li><a href="isro main.html">Home</a></li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>News</li>
+			<li><a href="isro main.html">Next</a></li>
+			
+		</ul>
+		
+
+	</nav>
+	</div>
+<main>
+
+
+<div class="sat">
+<img src="images/Indian_logo.wine.png" height="100px" width="160px">
+<h1>ADITYA-L1</h1>
+<p>India's first solar space observatory</p>
+
+<div class="orbit"><img src="images/Aditya_L1.png"></div>
+<div class="sun"><img src="images/sun.png"></div>
+<div class="earth"></div></main>
+
+<section>
+
+<div class="mission"><div class="left">
+<h2>Mission objectives</h2>
+<h3>The main objectives of Aditya-L1 are:</h3>
+<ul>
+<li>To observe the dynamics of the Sun's chromosphere and corona:
+To study chromospheric and coronal heating, the physics of partially ionised plasma, of coronal mass ejections (CMEs) and their origins, of the coronal magnetic field and heat transfer mechanisms, and flare exchanges.</li>
+<li>To observe the physical particle environment around its position. </li>
+<li>To determine the sequence of processes in multiple layers below the corona that lead to solar eruptions. </li>
+<li>To study space weather, and the origin, composition and dynamics of solar wind. </li>
+</ul>
+</div>
+<div class="right">
+<img src="images/Sun.png">
+</div>
+
+</div>
+<div class="over">
+	<div class="left"><h2>Overview</h2>
+	 
+	<ul>
+	<p>Lagrange points in the Sun–Earth system (not to scale) – a small object at any one of the five points will hold its relative position. The mission took 126 Earth days after launch to reach the halo orbit around the L1 point, which is about 1,500,000 km (930,000 mi) from Earth. The spacecraft is planned to remain in the halo orbit for its mission duration while being maintained at a stationkeeping Δv of 0.2–4 m/s per year.The 1,500 kg (3,300 lb) satellite carries seven science payloads with various objectives, including instruments to measure coronal heating, solar wind acceleration, coronal magnetometry, origin and monitoring of near-UV solar radiation (which drives Earth's upper atmospheric dynamics and global climate), coupling of the solar photosphere to the chromosphere and corona, and in-situ characterisations of the space environment around Earth by measuring energetic particle fluxes and magnetic fields of the solar wind, and solar magnetic storms. </p>
+	<p>Aditya-L1 will provide observations of the Sun's photosphere, chromosphere and corona. Its scientific payloads must be placed outside the interference from the Earth's magnetic field, and hence, could not have been useful in the low Earth orbit, as proposed in the original mission concept back in 2008. </p>
+	<p>One of the major unsolved problems in the field of solar physics is coronal heating. The upper atmosphere of the Sun has a temperature of 2,000,000 K (2,000,000 °C; 3,600,000 °F), whereas the lower atmosphere is just 6,000 K (5,730 °C; 10,340 °F).In addition, it is not understood exactly how the Sun's radiation affects the dynamics of the Earth's atmosphere on a shorter as well as a longer time scale. The mission will obtain near-simultaneous images of the different layers of the Sun's atmosphere, which will reveal the ways in which energy is channeled and transferred from one layer to another. Thus, the mission will enable a comprehensive understanding of the dynamical processes of the Sun and address some of the outstanding problems in solar physics and heliophysics.</p>
+</div>
+	<div class="right">
+		<div class="overview">
+			<div class="socard">
+				<div class="solabel">
+			<img src="images/Aditya-L1_spacecraft.jpg">
+				</div>
+				<div class="script1">
+				<h3>PSLV</h3>
+				</div>
+			</div>
+		<div class="socard">
+			<div class="solabel">
+			<img src="images/Aditya-L1MissionDetail-1.jpg">
+			</div>
+				<div class="script1">
+				<h3>PSLV</h3>
+				</div>
+		</div>
+		
+		
+</div>
+	</div>
+</div>
+
+
+
+<div class="launch">
+<div class="lleft">
+	<div class="mrocard">
+		<div class="mrolabel">
+			<img class="mro" src="images/indias-solar-mission-1.jpg">
+
+		</div>
+		<div class="script1">
+				<h3>PSLV</h3>
+				</div>
+			</div>
+</div>
+<div class="lrig">
+<h2>Mission Profile</h2><h3>Launch</h3>	<p>On 2 September 2023, at 11:50 IST, the Polar Satellite Launch Vehicle (PSLV-C57) accomplished a successful launch of the Aditya-L1 from the Second Launch Pad of the Satish Dhawan Space Centre (SDSC) located in Sriharikota. </p>
+	
+	<p>Aditya-L1, following a flight duration of 63 minutes and 20 seconds, achieved a successful injection into an elliptical orbit around the Earth at 12:54 IST.</p>
+<p>Aditya-L1 is scheduled to undergo a series of four Earth-bound orbital maneuvres prior to its injection to a transfer orbit towards the Lagrange point (L1). It reached its designated orbit at the L1 point 126 days after its launch on 6 January 2024 at 4:17 IST. </p>
+
+
+</div>
+</div>
+<div class="status">
+	<div class="stop">
+<h2>Status </h2>
+<p><b>First orbit raising burn:</b>
+On 3 September 2023, the Aditya-L1 performed its first Earth-bound maneuvre, raisingits orbit to a 245 km (152 mi) into 22,459 km (13,955 mi) orbit</p>
+<p><b>Second orbit raising burn:</b>
+On 5 September 2023, Aditya-L1 performed its second Earth-bound maneuvre, raising its orbit to a 282 km (175 mi) into 40,225 km (24,995 mi) orbit. </p>
+<p><b>Third orbit raising burn:</b>
+On 10 September 2023, Aditya-L1 performed its third Earth-bound maneuvre, raising its orbit to a 296 km (184 mi) into 71,767 km (44,594 mi) orbit. </p>
+
+<p><b>Fourth orbit raising burn:</b>
+On 15 September 2023, Aditya-L1 performed its fourth Earth-bound maneuvre, raising its original orbit to a 256 km (159 mi) into 121,973 km (75,791 mi) orbit. This is the last of such maneuvres, being directly followed by the Trans-Lagrangian 1 Injection, bound to take place on 19 September. </p>
+
+<p><b>Trans-Lagrangian 1 Injection:</b>
+On 19 September 2023, Aditya-L1 performed its last maneuvre around Earth to escape its orbit and headed towards the Lagrange 1 point. It will take at least four months to further reach its destination, 1.5 million kilometers away. </p>
+ 
+<p>On 30 September 2023, Aditya-L1 had escaped the Earth’s sphere of influence and was on the way to the Lagrange point 1. </p>
+ 
+<p><b>Trajectory correction maneuver:</b>
+On 6 October 2023, Aditya-L1 performed a Trajectory Correction maneuvre (TCM1). It was needed to correct the trajectory evaluated after tracking the Trans-Lagrangian Point 1 Insertion (TL1I) maneuvre performed on 19 September 2023. </p>
+ 
+<p><b>Halo orbit insertion:</b>
+On 6 January 2024, Aditya-L1 was successfully injected on the Halo orbit of Lagrange point 1 (HOI), at 4:17 pm IST. </p> 
+
+</div>
+<div class="sbot">
+
+		<div class="spic">
+
+			<div class="spcard">
+				<div class="label">
+			<img class=""src="images/cuFrEhbE68sdpSFeyqEoRk-1200-80.jpg">
+				</div>
+			</div>
+			
+		
+			<div class="spcard">
+				<div class="label">
+			<img class=""src="images/sun.png">
+				</div>
+			</div>
+			
+			
+			
+			
+
+		</div>
+
+	</div>
+</div></div>
+
+
+</section>
+<footer>
+<div class="add">
+<h3>Address</h3><center><div class="add1 b">
+<p>
+ISRO Headquarters,Antariksh Bhavan, New BEL Road,<br>Bengaluru-560 094
+</p><br>
+<p>Phone: +91 80 xxxxxxx/xx</p><p>E-mail: isropr@isro.gov.in</p></center></div>
+</div>
+<div class="f1 c1">
+<ul>
+	<li>RTI</li>
+	<li>Feedback</li>
+	<li>Contact us</li>
+	<li>FAQ</li>
+	<li>Website Policy</li>
+	<li>Copyright Policy</li>
+</ul>
+
+</div>
+<div class="f1 c2">
+<ul>
+	<li>Hyper Linking Policy</li>
+	<li>Terms of use</li>
+	<li>Archives</li>
+	<li>Web Information Manager</li>
+	<li>Space Policy</li>
+	<li>PIB</li>
+</ul>
+
+</div>
+<div class="f1 c3">
+<ul>
+	<li>Related Links</li>
+	<li>Check Your 7th CPC pension <br>Revision Status</li>
+	<li>Size Map</li>
+	<li>Help</li>
+<li> </li><li> </li>
+</ul>
+</div>
+<div class="f2"><img src="images/Aditya-L1_logo.png" height="200px" ></div>
+
+</footer>
+<div class="flast"><center>
+@Copyright 2023 ISRO. All rights reserved<br>Designed by<span> DEBCODE.COM</span></center>
+
+</div>
+</body>
+</html>

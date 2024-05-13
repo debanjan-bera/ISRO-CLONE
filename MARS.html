@@ -1,0 +1,749 @@
+<htmL>
+<head>
+	<title>Mars</title>
+<style>
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family:arial;
+}
+	body{
+	color:white;
+	background-color: #41080e;
+	
+}
+	
+.nav{				
+	width:100%;
+	
+}
+	nav{
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		display:flex;
+			align-items:center;
+			justify-content:space-between;
+			padding:5px 2%;
+			font-size:25px;
+		z-index:1;
+		}
+
+		nav img{
+			margin-left:-12px;
+    			margin-top: -12px;
+    			margin-bottom: -20px;
+			
+
+			}
+		nav ul{
+			border:0.5px solid white;
+			border-radius:12px;
+			background-color:#deafaf17;
+			backdrop-filter:blur(10px);
+			padding-bottom:2px;
+			
+
+}
+			
+		nav ul li{
+				list-style:none;
+				display:inline-block;
+				margin:8px 17px;
+				font-weight:500;
+				cursor:pointer;
+				transition: all ease 0.2s;
+				
+			}
+nav ul li a{
+			text-decoration: none;
+			
+			color:white;
+		}
+		nav ul li:hover{
+			border-bottom:3px solid orange;
+			color:white;
+			scale:0.9;
+		}
+			
+		main{
+			height: 89vh;
+   			width: auto;
+    			position:relative;
+			margin-bottom:0px;
+			
+			background-image:url('images/MANGAL.jpg');
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-size:cover;
+			
+}
+main h1{
+	position:absolute;
+	bottom:50px;
+	left:62px;
+	font-size:75px;
+	text-shadow: inset 0px 1px 8px 1px rgb(76 76 76 / 54%);
+}
+.main{
+	height:99vh;
+	width: auto;
+	background:url('images/marslandscape1.jpg') no-repeat center;
+	background-size:cover;
+	position:relative;
+	
+}
+
+.about{
+	height: 70vh;
+    	width: 77vw;
+	border:2px solid #efefef00;
+	border-radius:45px;
+	position:absolute;
+	box-shadow:2px 0px 14px #16020266;
+	top:44%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:transparent;
+	backdrop-filter:blur(36px);
+}
+.about .aimg{
+	position:absolute;
+	top:47px;
+	right:-120px;
+	height:330px;
+	width:320px;
+}
+.about a{
+	margin-left:25px;
+	margin-top: 24px;
+	padding: 20px;
+	border: none;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	border-radius: 32px;
+	font-size: 17px;
+}
+.about img{
+	width: 100%;
+	position: relative;
+	animation: float 10s linear infinite;
+}
+
+@keyframes float {
+    0%,100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+}
+.about .shadow{
+    height: 6%;
+    width: 30%;
+    background-color: #0000004f;
+    filter: blur(1.2px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -41px;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    animation: sha 10s linear infinite;
+}
+@keyframes sha {
+    0%,100%{
+        transform: translate(-50%,-50%) scale(1);
+    }
+    50%{
+        transform: translate(-50%,-50%) scale(2);
+    }
+}
+.script{
+	
+	height: 760px;
+    	width:789px;	
+}
+.script h1,h2{
+	margin:25px;
+	color:rgb(0, 0, 0);
+	font-size:50px;
+	
+}
+.script h2{
+	margin:25px;
+	color:black;
+	
+}
+
+.script p{
+	margin:25px;
+	color:black;
+	font-size:26px;
+	font-weight:500;
+		font-family:sans;
+
+}
+section{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+		
+	
+   	.mis{
+	width: 95vw;
+    display: flex;
+	margin:30px 0px;
+    padding: 20px;
+    color: white;
+    background-color: #ffffff08;
+    font-size: 25;
+    font-weight: 400;
+	 border: 4px solid #721717;
+    border-radius: 53px;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    
+		
+}
+.mis p{
+	padding:12px 25px;
+	font-size:26px;
+	font-weight:500;
+}
+.mis ul {
+	padding:10px 25px ;
+}
+.mis h2{
+	margin:12px 25px;
+	color:white;
+	font-size:38px;
+
+	
+}
+.obj{
+	height:96%;
+	margin:20px 10px;
+	width:400px;
+	background-color: #b8b8b814;
+    	backdrop-filter: blur(30px);
+	box-shadow: inset 1px 1px 10px #570007;
+	border-radius:20px;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	align-content: center;
+
+}
+.obj img{
+transition: transform 0.2s ease;
+
+
+}
+
+.spacec{
+height:300px;
+width:350px;
+
+
+}
+.solabel{
+margin:20px 10px;
+
+height:300px;
+width:350px;
+border-radius:20px;
+overflow:hidden;
+}
+.socard{
+	width: 370px;
+    background-color: #db1a1a29;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 0px red;
+	    backdrop-filter: blur(30px);
+
+}
+
+	
+
+
+.obj img:hover{
+transform: scale(1.1);
+
+
+}
+
+.script1{
+	padding:10px;
+
+	font-size:28px;
+	margin-bottom:8px;
+	text-align:center;
+}
+
+.mro{
+height:500px;
+width:350px;
+
+}
+.mrolabel{
+margin:20px 10px;
+
+height:500px;
+width:350px;
+border-radius:20px;
+overflow:hidden;
+}
+.mrocard{
+	width: 370px;
+    background-color: #db1a1a29;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px 0px red;
+    backdrop-filter: blur(30px);
+
+}
+.mleft{
+    position: relative;
+
+
+}
+.circle{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	filter:blur(20px);
+	animation:direc 49s ease infinite alternate;
+
+
+}
+@keyframes direc{
+
+0%{
+top: 60px;
+left: 60px;
+
+}
+50%{
+top: 79%;
+left: 100px;
+
+}
+
+100%{
+
+top: 50px;
+left: 70px;
+
+}
+}
+.launch{
+width: 95vw;
+    display: flex;
+	margin:30px 0px;
+    padding: 20px;
+    color: white;
+    background: #ffffff08;
+    font-size: 25;
+    font-weight: 400;
+	 border: 4px solid #721717;
+    border-radius: 53px;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+align-items: center;
+    justify-content: center;
+}
+.launch p{
+	padding:12px 25px;
+	font-size:26px;
+	font-weight:500;
+}
+
+.launch h2{
+	margin:12px 25px;
+	color:white;
+	font-size:38px;
+}
+.launch .mrocard{
+	margin:20px;
+}
+.launch img{
+transition: transform 0.2s ease;
+}
+.launch img:hover{
+transform: scale(1.1);
+}
+.status{
+width: 95vw;
+    display: flex;
+	margin:30px 0px;
+    padding: 20px;
+    color: white;
+    background: #ffffff08;
+    font-size: 25;
+    font-weight: 400;
+	 border: 4px solid #721717;
+    border-radius: 53px;
+    flex-direction: row;
+    flex-wrap: wrap;
+align-items: center;
+    justify-content: center;
+}
+.status p{
+	padding:12px 25px;
+	font-size:26px;
+	font-weight:500;
+}
+
+.status h2{
+	margin:12px 25px;
+	color:white;
+	font-size:38px;
+}
+
+.spic{
+	height:500px;
+	margin:20px 10px;
+	width:90vw;
+	background-color: #b8b8b814;
+    backdrop-filter: blur(30px);
+	box-shadow: inset 1px 1px 10px #570007;
+	border-radius:20px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	align-content: center;
+
+
+}
+
+.label{
+height:400px;
+width:300px;
+border-radius:20px;
+overflow:hidden;
+margin:30px 0px;
+}
+.spic img{
+height:410px;
+width:320px;
+transition: transform 0.2s ease;
+}
+.spic img:hover{
+transform: scale(1.1);
+}
+.scircle{
+	height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    filter: blur(20px);
+    animation: diec 45s linear infinite alternate;
+    z-index: -1;
+    left: 25px;
+
+
+}
+@keyframes diec{
+
+0%{
+    top: 100px;
+left: 26px;
+
+}
+50%{
+top: 100px;
+left: 84%;
+
+}
+
+100%{
+
+top: 100px;
+left: 25px;
+
+}
+}
+footer{
+color:white;
+height:300px;
+width:100%;
+background-color:#c900008f;
+display:flex;
+font-weight:600;
+align-items: center;
+    			align-content: center;
+   			flex-wrap: nowrap;
+    			flex-direction: row;
+			border-radius: 47px 47px 0px 0px;
+	justify-content: space-evenly;
+gap:12px;
+}
+footer h3{
+	margin:-15px 0px 20px;
+}
+.add{
+margin:50px 0px;
+}
+.add1{
+background-color:rgb(241 241 241 / 19%);
+padding:10px;
+border-radius:4px;
+border-bottom:4px solid white;
+}
+.f1 ul li{
+padding:10px 0px;
+cursor:pointer;
+list-style:none;
+}
+.f1{
+display:flex;
+}
+.f2{
+padding:0px;
+margin:0px;
+width:240px;
+
+overflow:hidden;
+background-size:cover;
+
+}
+.flast{
+height:70px;
+width:100%;
+color:white;
+background-color:#5f0000;
+
+padding:16px 0px 7px;
+}
+.flast span{
+
+font-weight:600;
+}
+
+</style>
+<body >
+	<div class="nav">
+		<nav>
+		<img src="images/Indian_logo.wine.png" height="100px" width="160px">
+		<ul>	
+			<li><a href="isro main.html">Home</a></li>
+			<li>About</li>
+			<li>Contact</li>
+			<li>News</li>
+			<li><a href="isro main.html">Next</a></li>
+			
+		</ul>
+		
+
+	</nav>
+	</div>
+<main>
+<h1>MISSION<br>
+MANGALYAAN</h1>
+</main>
+<div class="main">
+	
+	
+	<div class="about">
+		<div class="script">
+			<h2>About</h2>
+			<h1>Mars Mission</h1>
+		<p>The Mars Orbiter Mission (MOM), unofficially known as Mangalyaan was a space probe orbiting Mars since 24 September 2014. It was launched on 5 November 2013 by the Indian Space Research Organisation (ISRO). It was India's first interplanetary mission and it made ISRO the fourth space agency to achieve Mars orbit, after Roscosmos, NASA, and the European Space Agency. It made India the first Asian nation to reach the Martian orbit and the first nation in the world to do so on its maiden attempt. </p>
+		<a href="">read more</a>
+
+		</div>
+		<div class="aimg">
+			<img src="images/marsp.png">
+			<div class="shadow"></div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+<section>
+<div class="Mis ">
+	<div class="Misleft">
+<h2>Mission objectives</h2>
+	
+	<p>The primary objective of the mission is to develop the technologies required for designing, planning, management and operations of an interplanetary mission. The secondary objective is to explore Mars' surface features, morphology, mineralogy and Martian atmosphere using indigenous scientific instruments.</p> 
+<p>The main objectives are to develop the technologies required for designing, planning, management and operations of an interplanetary mission comprising the following major tasks:</p> 
+	<ul><li>Orbit manoeuvres to transfer the spacecraft from Earth-centred orbit to heliocentric trajectory and finally, capture into Martian orbit</li>
+	<li>Navigation in all phases</li>
+	<li>Maintain the spacecraft in all phases of the mission</li>
+	<li>Meeting power, communications, thermal and payload operation requirements</li>
+	<li>Incorporate autonomous features to handle contingency situations</li></ul>
+
+<h2>Scientific objectives</h2>
+<p>The scientific objectives deal with the following major aspects: </p>
+	<ul><li>Exploration of Mars surface features by studying the morphology, topography and mineralogy</li>
+	<li>Study the constituents of Martian atmosphere including methane and CO2 using remote sensing techniques</li>
+	<li>Study the dynamics of the upper atmosphere of Mars, effects of solar wind and radiation and the escape of volatiles to outer space</li></ul>
+<p>The mission would also provide multiple opportunities to observe the Martian moon Phobos and also offer an opportunity to identify and re-estimate the orbits of asteroids seen during the Martian Transfer Trajectory. The spacecraft also provided the first views ever of the far side of Martian Moon Deimos.</p>
+
+<h2>Studies</h2>
+<p>In May–June 2015 Indian scientists got an opportunity to study the Solar Corona during the Mars conjunction when earth and Mars are on the opposite sides of the sun. During this period the S band waves emitted by MOM were transmitted through the Solar Corona that extends millions of kms into space. This event helped scientists study the Solar surface and regions where temperature changed abruptly.</p>
+</div>
+	<div class="mleft">
+		<div class="circle"></div>
+
+		<div class="obj">
+
+			<div class="socard">
+			<div class="solabel">
+			<img class="spacec"src="images/Spacecraft.jpg">
+			</div>
+				<div class="script1">
+				<h3>Orbiter</h3>
+				</div>
+			</div>
+			<div class="mrocard">
+				<div class="mrolabel">
+				<img class="mro" src="images/mro.jpg">
+
+					</div>
+				<div class="script1">
+				<h3>Mars Orbiter Payload</h3>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div></div>
+<div class="launch">
+<div class="lleft">
+	<div class="mrocard">
+		<div class="mrolabel">
+			<img class="mro" src="images/PSLV.jpg">
+
+		</div>
+		<div class="script1">
+				<h3>PSLV</h3>
+				</div>
+			</div>
+</div>
+<div class="lrig">
+<h2>Lanuch</h2>
+
+<p>ISRO originally intended to launch MOM with its Geosynchronous Satellite Launch Vehicle (GSLV), but the GSLV failed twice in 2010 and still had issues with its cryogenic engine. Waiting for the new batch of rockets would have delayed the MOM for at least three years, so ISRO opted to switch to the less-powerful Polar Satellite Launch Vehicle (PSLV). Since it was not powerful enough to place MOM on a direct-to-Mars trajectory, the spacecraft was launched into a highly elliptical Earth orbit and used its own thrusters over multiple perigee burns (to take advantage of the Oberth effect) to place itself on a trans-Mars trajectory .</p>
+<p>
+
+On 19 October 2013, ISRO chairman K. Radhakrishnan announced that the launch had to be postponed by a week for 5 November 2013 due to a delay of a crucial telemetry ship reaching Fiji. The launch was rescheduled. ISRO's PSLV-XL placed the satellite into Earth orbit at 09:50 UTC on 5 November 2013, with a perigee of 264.1 km (164.1 mi), an apogee of 23,903.6 km (14,853.0 mi), and inclination of 19.20 degrees, with both the antenna and all three sections of the solar panel arrays deployed. During the first three orbit raising operations, ISRO progressively tested the spacecraft systems.
+</p><p>
+The orbiter's dry mass is 482.5 kg (1,064 lb) and it carried 852 kg (1,878 lb) of fuel at launch. Its main engine, a derivative of the system used on India's communications satellites, uses the bipropellant combination monomethylhydrazine and dinitrogen tetroxide to achieve the thrust necessary for escape velocity from Earth. It was also used to slow down the probe for Mars orbit insertion and, subsequently, for orbit corrections.</p>
+
+
+</div>
+</div>
+<div class="status">
+	<div class="stop">
+<h2>Status </h2>
+<p>The chairman, ISRO, Shri A.S. Kiran Kumar releasing the Mars Atlas on the occasion of the completion of one year of Mars Orbiter Mission in Orbit, in Bengaluru. The Scientific Secretary, ISRO, Dr. Y.V.N. Krishnamoorthy</p>
+<p>On 28 September 2014, MOM controllers published the spacecraft's first global view of Mars. The image was captured by the Mars Colour Camera (MCC). </p>
+<p>On 24 March 2015, MOM completed its initial six-month mission in orbit around Mars. ISRO extended the mission by an additional six months; the spacecraft has 37 kg (82 lb) of propellant remaining and all five of its scientific instruments are working properly. The orbiter can reportedly continue orbiting Mars for several years with its remaining propellant. </p>
+
+<p>A 17-day communications blackout occurred from 6 to 22 June 2015 while Mars' orbit took it behind the Sun from Earth's view. </p>
+
+<p>On 24 September 2018, MOM completed 4 years in its orbit around Mars, although the designed mission life was only six months. Over these years, MOM's Mars Colour Camera has captured over 980 images that were released to the public. The probe is still in good health and continues to work nominally. </p>
+
+<p>On 24 September 2019, MOM completed 5 years in orbit around Mars, sending 2 terabytes of imaging data, and had enough propellant to complete another year in orbit. </p>
+
+<p>On 1 July 2020, MOM was able to capture a photo of the Mars satellite Phobos from 4200 km away. </p>
+<p>In October 2022, ISRO admitted that it has lost the communication with MOM in April 2022, when it faced increasingly longer duration eclipses, including a seven-hour long eclipse that it was not designed to withstand. ISRO said the spacecraft was likely out of propellant and not recoverable. </p>
+</div>
+<div class="sbot">
+
+		<div class="spic">
+					<div class="scircle"></div>
+
+			<div class="spcard">
+				<div class="label">
+			<img class=""src="images/Mars_Orbiter.jpg">
+				</div>
+			</div>
+			
+			<div class="card">
+				<div class="label">
+				<img class="" src="images/bakhuysen_large.jpg.webp">
+				</div>
+			</div>
+			<div class="spcard">
+				<div class="label">
+			<img class=""src="images/picture2.jpg.webp">
+				</div>
+			</div>
+			
+			
+			
+			<div class="card">
+				<div class="label">
+				<img class="" src="images/170213150926-india-china-asia-space-race4.jpg">
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</div></div>
+</section>
+<footer>
+<div class="add">
+<h3>Address</h3><center><div class="add1 b">
+<p>
+ISRO Headquarters,Antariksh Bhavan, New BEL Road,<br>Bengaluru-560 094
+</p><br>
+<p>Phone: +91 80 xxxxxxx/xx</p><p>E-mail: isropr@isro.gov.in</p></center></div>
+</div>
+<div class="f1 c1">
+<ul>
+	<li>RTI</li>
+	<li>Feedback</li>
+	<li>Contact us</li>
+	<li>FAQ</li>
+	<li>Website Policy</li>
+	<li>Copyright Policy</li>
+</ul>
+
+</div>
+<div class="f1 c2">
+<ul>
+	<li>Hyper Linking Policy</li>
+	<li>Terms of use</li>
+	<li>Archives</li>
+	<li>Web Information Manager</li>
+	<li>Space Policy</li>
+	<li>PIB</li>
+</ul>
+
+</div>
+<div class="f1 c3">
+<ul>
+	<li>Related Links</li>
+	<li>Check Your 7th CPC pension <br>Revision Status</li>
+	<li>Size Map</li>
+	<li>Help</li>
+<li> </li><li> </li>
+</ul>
+</div>
+
+</footer>
+<div class="flast"><center>
+@Copyright 2023 ISRO. All rights reserved<br>Designed by<span> DEBCODE.COM</span></center>
+
+</div>
