@@ -20,7 +20,7 @@ nav{
     justify-content: space-between;
     color: white;
     font-size: 23px;
-    z-index: 12;
+    z-index: 10;
     padding-bottom: 8px;
     padding-top: 10px;
     background-color: #000211da;
@@ -59,6 +59,7 @@ nav .manu{
     visibility: hidden;
     font-size: 0px;
 }
+
 nav ul li::after{
     content: '';
     width: 100%;
@@ -73,6 +74,10 @@ nav ul li::after{
 }
 nav ul li:hover::after{
     transform: scaleX(1);
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
 }
 main{
     height: 100vh;
@@ -119,12 +124,13 @@ main .mainh2{
     left: 50%;
     height: 45vh;
     transform: translate(-50%, 0%);
-    z-index: 13;
+    z-index: 18;
     animation: land 10s linear forwards;
 }
 .mroc img{
     height: 100%;
     width: 100%;
+    z-index: 20;
 }
 @keyframes rotate{
 	0%{
